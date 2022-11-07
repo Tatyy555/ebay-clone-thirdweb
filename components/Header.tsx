@@ -52,6 +52,7 @@ function Header({}: Props) {
               src="https://i.imgur.com/hOPlIBS.png"
               width={100}
               height={100}
+              priority
               />
           </Link>
         </div>

@@ -113,7 +113,7 @@ function Create({}: Props) {
   };
 
   return (
-    <div className="bg-[#fef4e8] h-screen">
+    <div className="bg-[#fef4e8] min-h-screen">
       <Header />
       <main className="max-x-6xl mx-auto p-10 pt-2">
         <h1 className="text-4xl font-bold">List an Item</h1>

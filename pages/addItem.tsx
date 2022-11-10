@@ -50,7 +50,7 @@ function addItem({}: Props) {
   };
 
   return (
-    <div className="bg-[#fef4e8]">
+    <div className="bg-[#fef4e8] min-h-screen">
       <Header />
       <main className="max-w-6xl mx-auto p-10">
         <h1 className="text-4xl font-bold">Add an Item to the Marketplace</h1>

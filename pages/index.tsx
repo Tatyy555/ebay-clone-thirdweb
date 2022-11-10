@@ -5,6 +5,7 @@ import {
   MediaRenderer,
 } from "@thirdweb-dev/react";
 import { ListingType } from "@thirdweb-dev/sdk";
+import { useRouter } from "next/router";
 import Header from "../components/Header";
 
 const Home = () => {
@@ -14,22 +15,24 @@ const Home = () => {
   );
   const { data: listings, isLoading: loadingListings } =
     useActiveListings(contract);
+  const router = useRouter();
   console.log(listings);
 
   return (
-    <div className="">
+    <div className="bg-[#fef4e8]">
       <Header />
       <main className="max-w-6xl mx-auto py-2 px-6">
         {loadingListings ? (
-          <p className="text-center animate-pulse text-blue-500">
+          <p className="h-screen text-center animate-pulse text-blue-500">
             Loading Listings
           </p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-auto">
             {listings?.map((listing) => (
               <div
-                className="flex flex-col card hover:scale-105 transition-all duration-150 ease-out"
                 key={listing.id}
+                onClick={() => router.push("/listing/" + listing.id)}
+                className="flex flex-col card hover:scale-105 transition-all duration-150 ease-out"
               >
                 <div className="flex-1 flex flex-col pb-2 items-center">
                   <MediaRenderer className="w-44" src={listing.asset.image} />

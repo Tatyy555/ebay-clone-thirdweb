@@ -4,7 +4,11 @@
 
 @layer components {
   .connectWalletBtn {
-    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded cursor-pointer;
+    @apply bg-[#13667f] text-white font-bold py-2 px-4 rounded cursor-pointer;
+  }
+
+  .headerBtn{
+    @apply p-2 bg-[#1989ac] text-white rounded hover:text-[#13667f]
   }
 
   .headerLink {
@@ -12,7 +16,7 @@
   }
 
   .link {
-    @apply hover:text-blue-500 hover:underline cursor-pointer text-gray-600
+    @apply sm:text-lg md:text-2xl hover:text-blue-500 hover:underline cursor-pointer text-gray-600
   }
   
   .card{

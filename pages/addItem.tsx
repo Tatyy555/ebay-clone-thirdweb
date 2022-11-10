@@ -50,9 +50,9 @@ function addItem({}: Props) {
   };
 
   return (
-    <div>
+    <div className="bg-[#fef4e8]">
       <Header />
-      <main className="max-w-6xl mx-auto p-10 border">
+      <main className="max-w-6xl mx-auto p-10">
         <h1 className="text-4xl font-bold">Add an Item to the Marketplace</h1>
         <h2 className="text-xl font-semibold pt-5">Item Details</h2>
         <p className="pb-5">
@@ -61,7 +61,7 @@ function addItem({}: Props) {
         </p>
         <div className="flex flex-col justify-center items-center md:flex-row md:space-x-5 pt-5">
           <img
-            className="border h-80 w-80 object-contain"
+            className="border h-80 w-80 object-contain bg-white p-4"
             src={
               preview ||
               "https://img.icons8.com/pastel-glyph/512/image-file-add.png"
@@ -102,7 +102,7 @@ function addItem({}: Props) {
             />
             <button
               type="submit"
-              className="bg-blue-600 font-bold text-white rounded-full py-4 px-10 w-56 md:mt-auto mx-auto md:ml-auto"
+              className="bg-[#1facd8] font-bold text-white rounded-full py-4 px-10 w-56 md:mt-auto mx-auto md:ml-auto hover:text-[#1989ac]"
             >
               Add/Mint Item
             </button>

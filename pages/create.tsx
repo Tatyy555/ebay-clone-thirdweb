@@ -113,9 +113,8 @@ function Create({}: Props) {
   };
 
   return (
-    <div>
+    <div className="bg-[#fef4e8] h-screen">
       <Header />
-
       <main className="max-x-6xl mx-auto p-10 pt-2">
         <h1 className="text-4xl font-bold">List an Item</h1>
         <h2 className="text-xl font-semibold pt-5">
